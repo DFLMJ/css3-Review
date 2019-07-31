@@ -1,0 +1,35 @@
+/* 
+transition-timing-function:过度函数（默认值为ease函数）
+timing-function属性有如下参数可选:
+ease 前期加速，中期附近减速至后期
+ease-in 前期缓慢，逐渐加速，至最终状态，动画突然停止
+ease-out 前期快速，接近最终状态时逐渐减速
+ease-in-out 前期缓慢，中期加速，后期减速
+linear 以恒定速度执行动画
+cubic-bezier(x1,y1,x2,y2) 贝塞尔曲线函数
+step-start 立即跳转到结束状态并保持在该位置知道动画结束
+step-end 动画将保持初始状态，直到结束，直接跳转到最终位置
+steps(4,end) 一个阶梯函数除于输出值的域在等距离的步骤。
+steps(start,end)  一个阶梯函数除于输出值的域在等距离的步骤。
+
+***以上总结参考了mdn官方文档***
+*/
+
+.ceng {
+    width: 100px;
+    height: 100px;
+    background: pink;
+    cursor: pointer;
+    /* transition: all 1s .2s ease; */
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: .2s;
+    transition-timing-function: ease-in
+}
+
+.ceng:hover {
+    width: 300px;
+    height: 150px;
+    background-color: red;
+    border-radius: 40px;
+}

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: 60px auto;
+    width: 260px;
+    height: 270px;
+    border: 1px solid #cccccc;
+    font-family: 'Microsoft YaHei';
+
+}
+
+.m_title {
+    text-align: left;
+    font-size: 20px;
+    padding: 20px 10px 10px 10px;
+}
+
+.m_content {
+    color: #11ccaa;
+    padding: 0 10px 10px 10px;
+    font-size: 14px
+}
+
+.m_img {
+    text-align: right;
+    position: relative;
+}
+
+.m_img img {
+    position: absolute;
+    width: 220px;
+    right: -5px;
+    top: 40px;
+    /* 方法一 */
+    transition: transform .2s;
+    /* 方法二 */
+    /* transition: right .2s; */
+}
+
+.main:hover img {
+    /* 方法一 */
+    transform: translate(-10px);
+    /* 方法二 */
+    /* right: 10px; */
+}
+
+/* 关于transition的bug(我自己测试了chrome、edge均是这个bug)，
+在填写属性时需要在填写属性的样式里面把要变化的样式写一下，
+否则没有效果 */

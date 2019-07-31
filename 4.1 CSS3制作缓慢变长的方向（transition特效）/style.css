@@ -1,0 +1,25 @@
+/* 
+transition是以下属性的简写属性
+transition-property:过度属性（默认值all） 可填写其他属性例如background、width、height
+transition-duration:过渡持续时间(默认值为0)
+transition-delay:过渡延迟时间（默认值为0）
+transition-timing-function:过度函数（默认值为ease函数）
+*/
+
+.ceng {
+    width: 100px;
+    height: 100px;
+    background: pink;
+    cursor: pointer;
+    /* transition: all 1s .2s ease; */
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: .2s;
+}
+
+.ceng:hover {
+    width: 300px;
+    height: 150px;
+    background-color: red;
+    border-radius: 40px;
+}
