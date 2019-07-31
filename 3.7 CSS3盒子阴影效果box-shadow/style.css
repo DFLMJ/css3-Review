@@ -1,0 +1,33 @@
+/* 
+box-shadow:h-shadow v-shadow blur spread color inset
+h-shadow：必选，水平阴影位置，允许负值
+v-shadow：必选，垂直阴影位置，允许负值
+*/
+/* 以下参数为可选 */
+/* 
+blur：模糊距离
+spread：阴影尺寸
+color：阴影颜色
+inset：将外部阴影改为内部阴影
+*/
+body {
+    background: #e9e9e9
+}
+
+.ceng {
+    width: 294px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #bfbfbf;
+    background: white;
+    box-shadow: 2px 2px 3px #aaa
+}
+
+.rotate_left {
+    float: left;
+    transform: rotate(8deg);
+}
+
+.rotate_right {
+    float: left;
+    transform: rotate(-8deg);
+}
