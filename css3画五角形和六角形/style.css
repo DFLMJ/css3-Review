@@ -1,0 +1,49 @@
+.pentagon,
+.hexagon {
+    margin: 120px auto;
+}
+
+/* 开始绘画五角形 */
+
+/* 绘制梯形(通过控制宽度来撑开内部x方向的长度) */
+.pentagon {
+    width: 100px;
+    border: 50px solid transparent;
+    border-top:100px solid #f00;
+    position: relative;
+}
+
+/* 绘制三角形 */
+.pentagon::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-bottom: 75px solid #f00;
+    position: absolute;
+    top: -275px;
+    left: -50px
+}
+
+/* 绘制六边形 */
+/* 通过控制高度来撑开内部y方向的长度 */
+.hexagon,
+.hexagon::after {
+    width: 0;
+    height: 100px;
+    border: 50px solid transparent;
+}
+
+.hexagon {
+    border-left: 100px solid #f00;
+    position: relative;
+}
+
+.hexagon::after {
+    content: '';
+    border-right: 100px solid #f00;
+    position: absolute;
+    left: -250px;
+    top: -50px
+}

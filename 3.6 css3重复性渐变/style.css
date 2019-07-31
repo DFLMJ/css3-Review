@@ -1,0 +1,20 @@
+/*css 渐变 */
+.ceng {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 30px;
+    border: 1px solid black;
+}
+/* 要点详记： */
+/* 1.只需要在线性渐变或径向渐变的前面加上repeating单词即可 */
+/* 2.颜色的后面一定要跟上色标值，否则没有作用 */
+.circle {
+    background: repeating-linear-gradient(red 0px, green 40px, orange 80px);
+}
+
+.ellipse {
+    border-radius: 50%;
+    background:repeating-radial-gradient(red 0px, green 30px, orange 40px);
+
+}

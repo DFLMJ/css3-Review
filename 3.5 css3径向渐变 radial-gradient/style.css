@@ -1,0 +1,36 @@
+/* 径向渐变 */
+
+.ceng {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    margin: 30px;
+    border: 1px solid black;
+}
+
+/* radial-gradient(确定渐变圆心,颜色 开始渐变的百分比或像素，颜色n ) */
+
+.circle {
+    /* 以圆形渐变  默认以圆形渐变为准*/
+    background: radial-gradient(rgba(255,0,0,1),blue);
+    background: radial-gradient(circle at center,orange,green);
+    background: radial-gradient(circle at right,orange,green);
+    background: radial-gradient(circle at top,orange,green);
+    background:radial-gradient(circle at top left,orange,green);
+    /* 圆心渐变的大小 */
+    background:radial-gradient(20px circle at center,orange,green);
+    background: radial-gradient(20px at center,orange,green,red);
+}
+
+.ellipse {
+    /* 以椭圆形渐变 */
+    background: radial-gradient(ellipse at center,orange,green);
+    background: radial-gradient(ellipse at right,orange,green);
+    background: radial-gradient(ellipse at top,orange,green);
+    background: radial-gradient(ellipse at top left,orange,green);
+    /* 圆心渐变的大小 椭圆渐变需要填充 x,y坐标 */
+    background: radial-gradient(20px 30px ellipse at center,orange,green);
+    background: radial-gradient(20px 30px ellipse at center,orange,green,red);
+
+}

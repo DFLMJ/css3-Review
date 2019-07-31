@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transform</title>
+    <style type="text/css">
+        /* transform适用于盒模型元素来倾斜（skew）、旋转（rotate）、缩放（transform-origin）、位移（transform-origin） */
+        .rhomboid,
+        .diamond {
+            margin: 100px auto;
+            background: #6a6;
+            width: 200px;
+        }
+
+        .diamond {
+            height: 200px;
+            transform: rotate(45deg)
+        }
+
+        .rhomboid {
+            height: 100px;
+            transform: skew(30deg, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="diamond"></div>
+    <div class="rhomboid"></div>
+</body>
+
+</html>

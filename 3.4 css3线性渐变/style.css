@@ -1,0 +1,21 @@
+/* 渐变适用于list-style-image、border-image、background-image、
+::before、::after、cursor */
+
+/* 这是线性渐变的用法 */
+/* linear-gradient(方向或度数(可以省略)，颜色 开始渐变的百分比或像素，颜色n ) */
+.ceng{
+    margin: 80px auto;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #f00;
+    background-image: linear-gradient(to bottom,red,blue);
+    /* 控制颜色梯度 */
+    background-image: linear-gradient(red,20%,blue);
+    /* 渐变范围 */
+    background-image: linear-gradient(to left,red 30%,blue 10px);
+    /* 使用不同的颜色标准 */
+    background-image: linear-gradient(to left,#f00 200px,blue 100px);
+    /* 堆积渐变和累积效果 */
+    background-image: linear-gradient(to right, rgba(255,0,0,.3), mistyrose),
+    url("https://mdn.mozillademos.org/files/15525/critters.png");
+}

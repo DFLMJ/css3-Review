@@ -1,0 +1,35 @@
+/* 太极图的主圆，一半黑一半白（边跨与宽度加起来必需相等于高度） */
+#taiji{
+    margin: 90px auto;
+    background-color: #fff;
+    width: 100px;
+    height: 200px;
+    border-radius: 50%;
+    border-left:100px solid #000;
+    position: relative;
+}
+/* 绘制白底黑框圆 */
+#taiji::before{
+    content: '';
+    width: 0;
+    height: 0;
+    padding: 15px;
+    background-color: #fff;
+    border: 35px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: -50px;
+}
+/* 绘制黑底白框圆 */
+#taiji::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    padding: 15px;
+    background-color: #000;
+    border: 35px solid #fff;
+    position: absolute;
+    border-radius: 50%;
+    left: -50px;
+    bottom: 0
+}

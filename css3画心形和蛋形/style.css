@@ -1,0 +1,42 @@
+.eggShape {
+    margin: 200px auto;
+}
+
+.heartShaped {
+    margin: 100px auto;
+    position: relative;
+    height: 1px;
+    width: 1px
+}
+
+.heartShaped::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 40px;
+    border: 40px solid #f00;
+    border-radius: 60px 60px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0  100%;
+    left: 0px;
+}
+
+.heartShaped::after {
+    content: '';
+    display: block;
+    height: 40px;
+    border: 40px solid #f00;
+    border-radius: 60px 60px 0 0;
+    position: absolute;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+    right: 0px;
+    top: 0
+}
+/* border-radius的值（符号‘/’前面的是x值，后面的是y值 ） */
+.eggShape {
+    width: 126px;
+    height: 180px;
+    background-color: #f00;
+    border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+}
