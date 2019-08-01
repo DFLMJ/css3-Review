@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 50px auto;
+    text-align: center;
+    font: bold 40px 'Microsoft Yahei';
+}
+
+body {
+    background: #676667;
+}
+/* text-shadow: 阴影的x 阴影的y 阴影模糊宽度 颜色;   用来设置文字的阴影效果  */
+.font1 {
+    text-shadow: 0 0 10px #f00;
+    color: white;
+}
+
+.font2 {
+    text-shadow: 0 2px #9d9c9d;
+}
+
+.font3 {
+    text-shadow: 1px 1px 0 rgba(248, 178, 255, .6),
+        2px 2px 0 rgba(248, 178, 255, .6),
+        3px 3px 0 rgba(248, 178, 255, .6),
+        4px 4px 0 rgba(248, 178, 255, .6);
+}

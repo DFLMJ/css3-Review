@@ -1,0 +1,13 @@
+/* text-overflow:ellipsis(代表字符 ... )|clip|string(用来替代截取截取掉的字符) */
+.demo1 {
+    border: 1px solid black;
+    margin: 100px auto;
+    width: 300px;
+    /* 发出未显示的溢出内容信号 这里使用的ellipsis代表 ... */
+    text-overflow:ellipsis ;
+    /* 强制文字不换行 */
+    white-space: nowrap;
+    /* 隐藏超出部分 */
+    overflow: hidden;
+}
+/* 多行截取参考 https://github.com/happylindz/blog/issues/12 */

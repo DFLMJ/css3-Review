@@ -1,0 +1,20 @@
+.dialog {
+    background: #6a6;
+    width: 330px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.dialog::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 10px solid transparent;
+    border-right-color: #6a6;
+    left: -20px;
+    top: 15px;
+}

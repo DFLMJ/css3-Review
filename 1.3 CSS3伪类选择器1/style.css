@@ -1,0 +1,41 @@
+ /* 未确保生效须遵循LVHA循序声明：:link :visited :hover :active  */
+
+
+ /* link选择器是用来选中标签当中的未访问的连接 */
+ /* 它将选中那些尚未访问的链接，包括那些给定了其他伪类元素的选择器连接 */
+ /* 例如：:hover :active :visited */
+ a:link {
+     color: #666
+ }
+
+ /* visited选择器是用来选中已经访问过链接的标签*/
+ a:visited {
+     color: #f00
+ }
+
+ /* hover选择器是用来选中将鼠标悬停到上面的标签(适用于用户使用指示设备虚指一个元素(没有激活)的情况 */
+ a:hover {
+     color: #000
+ }
+
+ /* active选中器是用来匹配被用户激活的元素(选中当前用户鼠标激活的标签)*/
+ a:active {
+     color: #0f0
+ }
+
+
+
+ /* enableb选择器是用来表示任何启用的(enabled)元素*/
+ input:enabled {
+     background-color: #0f0
+ }
+
+ /*disabled表示禁用状态的元素 */
+ input:disabled {
+     background-color: #f00
+ }
+
+ /* checked选择器表示任何处于选中的rediu、checkbox、option */
+ input:checked+label {
+     color: #259
+ }

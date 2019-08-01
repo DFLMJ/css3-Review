@@ -1,0 +1,17 @@
+/* transform适用于盒模型元素来倾斜（skew）、旋转（rotate）、缩放（transform-origin）、位移（transform-origin） */
+.rhomboid,
+.diamond {
+    margin: 100px auto;
+    background: #6a6;
+    width: 200px;
+}
+
+.diamond {
+    height: 200px;
+    transform: rotate(45deg)
+}
+
+.rhomboid {
+    height: 100px;
+    transform: skew(30deg, 0);
+}

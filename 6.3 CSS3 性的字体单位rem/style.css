@@ -1,0 +1,18 @@
+html{
+    /* 这里的62.5是根据 10/16*100% */
+    /* 10代表10px，16代表游览器默认的字体大小16px */
+    font-size: 62.5%;
+}
+body{
+    font-size: 30px;
+}
+
+.font1{
+    /* em是根据它的父级字体大小来决定的 */
+    font-size:1.4em
+}
+.font2{
+    /* rem(root em)是根据文档中的根元素来决定的 */
+    /* 移动端多用rem，需要配合html里面的font-size利用js获取视窗来进行计算获得font-size的值 */
+    font-size: 1.4rem
+}

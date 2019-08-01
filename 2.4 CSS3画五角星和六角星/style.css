@@ -1,0 +1,55 @@
+/* 五角星 */
+/* 先绘制最顶部的三角形 */
+.pentagram {
+    position: relative;
+    border: 30px solid transparent;
+    border-bottom: 80px solid #f00;
+    width: 0px;
+    margin: 50px auto;
+}
+
+/* 为三角形制定统一的样式 */
+.pentagram::before,
+.pentagram::after {
+    content: '';
+    display: block;
+    border: 112px solid transparent;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid #f00;
+}
+
+/* 绘制左边的三角形  */
+.pentagram::before {
+    left: -75px;
+    transform: rotate(35deg);
+    top: -31px;
+}
+
+/* 绘制右边的三角形 */
+.pentagram::after {
+    right: -75px;
+    transform: rotate(-35deg);
+    top: -31px
+}
+
+/* 六角星 (两个等边三角形组合)*/
+.hexagram {
+    margin: 200px auto;
+    width: 0;
+    height: 0;
+    border: 60px solid transparent;
+    border-bottom: 100px solid #f00;
+    position: relative;
+}
+
+.hexagram::before {
+    content: '';
+    border: 60px solid transparent;
+    border-bottom: 100px solid #f00;
+    position: absolute;
+    transform: rotate(180deg);
+    left: -60px;
+    top: 25px
+}

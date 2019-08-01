@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.clearfix {
+    clear: both;
+    overflow: auto;
+}
+
+.demo,
+.demo2 {
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: 50px auto;
+    padding: 10px
+}
+
+.demo li,
+.demo2 li {
+    float: left;
+    list-style: none;
+    padding: 2px;
+    border: 1px solid #ccc;
+    margin-right: 4px;
+    width: 20px
+}
+
+.demo a,
+.demo2 a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* background-color: #f36; */
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ····················CSS选择器开始···························································· */
+
+/* 匹配某个元素中的第一个元素 */
+.demo li:first-child {
+    background-color: green
+}
+
+/* 匹配某个元素中的最后一个元素 */
+.demo li:last-child {
+    background-color: blue
+}
+
+/* 匹配某个元素中的一个或多个特定子元素  :nth-child(n) :nth-child(2n) :nth-child(2n+1)*/
+.demo li:nth-child(2) {
+    background-color: aqua;
+}
+
+/* 从这个元素的最后一个子元素开始匹配一个或多个特定子元素 */
+.demo li:nth-last-child(8) {
+    background-color: brown
+}
+
+/* 匹配具有相同节点的元素（匹配元素和他相同的） */
+.demo li:nth-of-type(4) {
+    background-color: black
+}
+
+/* 倒序 匹配具有相同节点的元素（匹配元素和他相同的）  */
+.demo li:nth-last-of-type(6) {
+    background-color: blueviolet
+}
+
+/* 匹配一个上级元素的第一个子元素 */
+.demo2 li:first-of-type {
+    background-color: burlywood
+}
+
+/* 匹配一个上级元素的最后一个子元素*/
+.demo2 li:last-of-type {
+    background-color: cadetblue
+}
+
+/* 匹配一个元素,这个元素没有相同类型的兄弟元素*/
+.demo2 li:only-of-type {
+    background-color: darkorchid;
+}
+
+/* 匹配一个父元素的唯一 一个子元素 （也就是说这个子元素在同级中只有一个）*/
+.demo2 li:only-child {
+    background-color: red;
+}
+
+/* 匹配没有任何内容的元素 */
+.demo2 div:empty {
+    margin-left: 100px;
+    width: 100px;
+    height: 20px;
+    background-color: blue
+}

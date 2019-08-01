@@ -1,0 +1,10 @@
+.demo{
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    background-color: #f66;
+    /* border-top-left-radius: 100px;
+    border-top-right-radius: 100px; */
+    /* 值的排列顺序： 左上角 右上角 右下角 左下角*/
+    border-radius: 100px 100px 0 0;
+}
