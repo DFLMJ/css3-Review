@@ -1,0 +1,67 @@
+/* keyframes有两种方式 */
+/* 1：for to */
+/* 2：百分比 */
+
+/* CSS种的animation是复合属性 */
+/* animation是以下所有符合属性的简写，使用时只需要把值顺序填入即可 */
+
+/* animation-name 需要执行的动画，值为关键帧名字由@keysfamts定义 */
+/* animation-duration 执行动画的总时间，值为number类型*/
+/* animation-timing-function  */
+/*(timing-function)是css数据类型表示一个数学函数（又称缓动函数），他描述了一个过渡或动画中一维数值的改变速度。（加速度曲线） */
+/* 值：case、case-in、case-in-out、step-end、step-start、steps()、cubic-bezier(x1,y1,x2,y2)、linear、 */
+/* animation-delay 延时执行动画，值为number*/
+/* animation-iteration-count 执行动画的次数，值可为number或infinite(重复执行)*/
+/* animation-direction 指示动画是否反向播放，值：normal | reverse | alternate | alternate-reverse*/
+/* animation-fill-mode 设置css样式再执行之前和执行之后如何将样式应用于目标，值：none | forwards | backwards | both */
+/* animation-play-state 查询或设置动画的播放状态，值：running | paused */
+
+.rect {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background: #f00;
+    animation: mymove 3s ease 2s 1 alternate both running;
+
+    /* animation-name: mymove;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-play-state: running */
+}
+
+@keyframes mymove {
+    0% {
+        left: 0;
+        top: 0;
+        background: #f00
+    }
+
+    25% {
+        left: 95%;
+        top: 0;
+        background: #0f0
+    }
+
+    50% {
+        top: 90%;
+        left: 95%;
+        background: #00f
+    }
+
+    75% {
+        left: 0;
+        top: 90%;
+        background: #ff0
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+        background: #f00
+    }
+
+}

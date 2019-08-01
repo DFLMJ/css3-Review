@@ -1,0 +1,42 @@
+.cilcle {
+    margin: 300px auto;
+    position: relative;
+    width: 1px;
+    height: 1px;
+}
+
+.cilcle::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    background: #a1d679;
+    border-radius: 50%;
+    animation: cilcleScale 1s infinite;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cilcle::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: #82c04a;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    animation: cilcleScale 1s infinite;
+    animation-delay: -.5s;
+}
+
+@keyframes cilcleScale {
+    0%,
+    100% {
+        transform: scale(0);
+    }
+    
+    50% {
+        transform: scale(1);
+    }
+}

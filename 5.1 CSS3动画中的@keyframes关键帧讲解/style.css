@@ -1,0 +1,44 @@
+/* keyframes有两种方式 */
+/* 1：for to */
+/* 2：百分比 */
+
+.rect {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    animation: mymove 10s infinite;
+    background: #f00;
+}
+
+@keyframes mymove {
+    0% {
+        left: 0;
+        top: 0;
+        background: #f00
+    }
+
+    25% {
+        left: 95%;
+        top: 0;
+        background: #0f0
+    }
+
+    50% {
+        top: 90%;
+        left: 95%;
+        background: #00f
+    }
+
+    75% {
+        left: 0;
+        top: 90%;
+        background: #ff0
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+        background: #f00
+    }
+
+}
